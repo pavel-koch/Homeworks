@@ -15,24 +15,20 @@ public class Main {
         // Задача 2
         System.out.println("Задание 2");
         int temp = 5;
-        if (temp < 5 || temp > 5) {
-            if (temp < 5){
-                System.out.println("На улице " + temp
-                        + " градусов, нужно надеть шапку");
-            } else {
-                System.out.println("На улице " + temp
-                        + " градусов, можно идти без шапки");
-            }
+        if (temp < 5) {
+            System.out.println("На улице " + temp
+                    + " градусов, нужно надеть шапку");
         } else {
             System.out.println("На улице " + temp
-                    + " градусов, возьми с собой шапку, а там разберемся :)");
+                    + " градусов, можно идти без шапки");
         }
+
 
         // Задача 3
         System.out.println("Задание 3");
         int speed = 70;
         if (speed < 60 || speed > 60) {
-            if (speed > 60){
+            if (speed > 60) {
                 System.out.println("Если скорость " + speed
                         + ", то придется заплатить штраф");
             } else {
@@ -46,27 +42,27 @@ public class Main {
 
         // Задача 4
         System.out.println("Задание 4");
-        int personАge = 1;
-        if (personАge >= 2) {
-            if (personАge <= 6){
-                System.out.println("Если возраст человека равен " + personАge
+        int personAge = 1;
+        if (personAge >= 2) {
+            if (personAge <= 6) {
+                System.out.println("Если возраст человека равен " + personAge
                         + ", то ему нужно ходить в детский сад");
             } else {
-                if (personАge <= 17) {
-                    System.out.println("Если возраст человека равен " + personАge
+                if (personAge <= 17) {
+                    System.out.println("Если возраст человека равен " + personAge
                             + ", то ему нужно ходить в школу");
                 } else {
-                    if (personАge <= 24) {
-                        System.out.println("Если возраст человека равен " + personАge
+                    if (personAge <= 24) {
+                        System.out.println("Если возраст человека равен " + personAge
                                 + ", то его место в университете");
                     } else {
-                        System.out.println("Если возраст человека равен " + personАge
+                        System.out.println("Если возраст человека равен " + personAge
                                 + ", то ему пора ходить на работу");
                     }
                 }
             }
         } else {
-            System.out.println("Если возраст человека равен " + personАge
+            System.out.println("Если возраст человека равен " + personAge
                     + ", то ему еще рано куда-то ходить");
         }
 
@@ -75,14 +71,14 @@ public class Main {
         int babyAge = 6;
         boolean accompanying = true;
         if (babyAge >= 5) {
-            if (babyAge >= 14){
+            if (babyAge >= 14) {
                 System.out.println("Если возраст ребенка равен " + babyAge
-                        + ", можно кататься на аттракционе без сопровождении взрослого");
+                        + ", то ему можно кататься на аттракционе без сопровождении взрослого");
 
             } else {
                 if (accompanying) {
                     System.out.println("Если возраст ребенка равен " + babyAge
-                            + ", можно кататься на аттракционе в сопровождении взрослого");
+                            + ", то ему можно кататься на аттракционе в сопровождении взрослого");
                 } else {
                     System.out.println(" Тебе нужен сопровождающий");
                 }
@@ -94,11 +90,11 @@ public class Main {
 
         // Задача 6
         System.out.println("Задание 6");
-        int capacity = 120;
+        int capacity = 102;
         int passengers = 40;
         boolean places = capacity > passengers;
         if (places) {
-            if (passengers < 60){
+            if (passengers < 60) {
                 System.out.println("В вагоне есть свободные сидячие места");
             } else {
                 System.out.println("В вагоне остались только стоячие места");
