@@ -27,18 +27,14 @@ public class Main {
         // Задача 3
         System.out.println("Задание 3");
         int speed = 70;
-        if (speed < 60 || speed > 60) {
-            if (speed > 60) {
-                System.out.println("Если скорость " + speed
-                        + ", то придется заплатить штраф");
-            } else {
-                System.out.println("Если скорость " + speed
-                        + ", то можно ездить спокойно");
-            }
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed
+                    + ", то придется заплатить штраф");
         } else {
             System.out.println("Если скорость " + speed
-                    + ", то едешь по грани, будь осторожен :)");
+                    + ", то можно ездить спокойно");
         }
+
 
         // Задача 4
         System.out.println("Задание 4");
@@ -109,18 +105,16 @@ public class Main {
         int one = 6;
         int two = 16;
         int three = 15;
-        if (one == two || one == three || two == three) {
-            System.out.println("Есть числа равные между собой, измени условия");
+
+        if (one > two && one > three) {
+            System.out.println("Самое большое число one = " + one);
         } else {
-            if (one > two && one > three) {
-                System.out.println("Самое большое число one = " + one);
+            if (two > one && two > three) {
+                System.out.println("Самое большое число two = " + two);
             } else {
-                if (two > one && two > three) {
-                    System.out.println("Самое большое число two = " + two);
-                } else {
-                    System.out.println("Самое большое число three = " + three);
-                }
+                System.out.println("Самое большое число three = " + three);
             }
         }
+
     }
 }
