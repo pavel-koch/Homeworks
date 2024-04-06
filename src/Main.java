@@ -46,29 +46,19 @@ public class Main {
         }
 
         //Задание 4
-        // Можно и без switch, но вроде как тема занятия про это
         System.out.println("Задание 4");
-        int deliveryDistance = 95;
+        int deliveryDistance = 15;
         int time = 1;
-        if (deliveryDistance >= 20 && deliveryDistance < 60) {
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: " + time);
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             time++;
+            System.out.println("Потребуется дней: " + time);
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             time += 2;
+            System.out.println("Потребуется дней: " + time);
         } else if (deliveryDistance > 100){
-            time = 0;
-        }
-        switch (time) {
-            case 1:
-                System.out.println("Потребуется дней: " + time);
-                break;
-            case 2:
-                System.out.println("Потребуется дней: " + time);
-                break;
-            case 3:
-                System.out.println("Потребуется дней: " + time);
-                break;
-            default:
-                System.out.println("Доставки нет");
+            System.out.println("Доставки нет");
         }
 
         //Задание 5
