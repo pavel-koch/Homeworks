@@ -67,5 +67,6 @@ public class Main {
             b = a * i;
             System.out.printf("%s * %s = %s\n", a, i, b);
         }
+
     }
 }
