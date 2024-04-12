@@ -74,8 +74,5 @@ public class Main {
             }
             System.out.printf("%s, ", arr1[i]);
         }
-
-
-
     }
 }
