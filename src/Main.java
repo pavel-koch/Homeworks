@@ -30,13 +30,6 @@ public class Main {
         System.out.printf("Миннимальная сумма трат за неделю составила %s рублей.\n" +
                 "Максимальная сумма трат за неделю составила %s рублей\n", minElem, maxElem);
 
-        // Вариант 2
-        Arrays.sort(arrSum);
-        minElem = arrSum[0];
-        maxElem = arrSum[arrSum.length -1];
-        System.out.printf("Миннимальная сумма трат за неделю составила %s рублей.\n" +
-                "Максимальная сумма трат за неделю составила %s рублей\n", minElem, maxElem);
-
         // Задание 3
         System.out.printf("\n\nЗадание 3\n");
         double averageExpenses = summa / arrSum.length;
